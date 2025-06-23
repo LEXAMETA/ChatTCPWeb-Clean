@@ -4,11 +4,8 @@
   "scripts": {
     "start": "expo start --web",
     "web": "expo start --web",
-    "vercel-build": "echo 'Starting expo export' && npx expo export:web || echo 'Expo export failed'",
+    "vercel-build": "echo 'Expo version:' && npx expo --version && echo 'Starting expo export' && npx expo export:web --dev || echo 'Expo export failed'",
     "postbuild": "echo 'Checking dist contents' && ls -la dist || echo 'ERROR: dist directory not found'",
-    "lint": "eslint .",
-    "type-check": "tsc --noEmit",
-    "test": "jest",
     "check-expo": "echo 'Checking expo-cli' && npx expo --version || echo 'expo-cli not found'"
   },
   "dependencies": {
@@ -16,19 +13,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.1",
-    "react-native-web": "^0.19.10",
-    "react-native-tcp-socket": "^6.0.0",
-    "react-native-mmkv": "^2.12.2",
-    "zustand": "^4.5.2"
+    "react-native-web": "^0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "expo-cli": "^6.3.10",
-    "typescript": "^5.4.5",
-    "eslint": "^8.57.0",
-    "jest": "^29.7.0",
-    "@types/react": "^18.2.0",
-    "@types/node": "^20.12.7"
+    "typescript": "^5.4.5"
   },
   "private": true,
   "engines": {
