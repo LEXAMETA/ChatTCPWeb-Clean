@@ -1,13 +1,12 @@
-// app/index.tsx
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-
-export default function ChatMenu() {
-  console.log('ChatMenu mounted');
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>ChatTCP-Web-Clean Test Page</Text>
-      <Button title="Test Button" onPress={() => console.log('Button pressed')} />
-    </View>
-  );
+{
+  "expo": {
+    "name": "ChatTCP-Web-Clean",
+    "slug": "chattcp-web-clean",
+    "version": "1.0.0",
+    "platforms": ["web"],
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    }
+  }
 }
