@@ -4,7 +4,7 @@
       "src": "package.json",
       "use": "@vercel/static",
       "config": {
-        "installCommand": "npm install --no-cache --verbose",
+        "installCommand": "echo 'Installing dependencies' && npm install --no-cache --verbose",
         "buildCommand": "echo 'Running build' && npm run web:build && npm run postbuild",
         "outputDirectory": "web-build"
       }
@@ -15,5 +15,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "engines": {
+    "node": "18.x"
+  }
 }
