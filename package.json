@@ -18,8 +18,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
-    "expo-cli": "^6.3.10",
-    "typescript": "^5.4.5"
+    "expo-cli": "6.3.10",
+    "typescript": "^5.4.5",
+    "@expo/webpack-config": "^19.0.1"
   },
   "private": true,
   "engines": {
