@@ -9,7 +9,7 @@
     "check-expo": "echo 'Checking expo-cli' && npx expo --version || echo 'expo-cli not found'"
   },
   "dependencies": {
-    "expo": "^51.0.8",
+    "expo": "^50.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.1",
