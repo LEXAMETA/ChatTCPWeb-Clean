@@ -1,11 +1,12 @@
+
 {
   "name": "chattcp-web-clean",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start --web",
     "web": "expo start --web",
-    "vercel-build": "echo 'Starting expo export' && npx expo export --platform web --output web-build || echo 'Expo export failed'",
-    "postbuild": "echo 'Checking web-build contents' && ls -la web-build || echo 'ERROR: web-build directory not found'",
+    "vercel-build": "echo 'Starting expo export' && npx expo export:web || echo 'Expo export failed'",
+    "postbuild": "echo 'Checking dist contents' && ls -la dist || echo 'ERROR: dist directory not found'",
     "lint": "eslint .",
     "type-check": "tsc --noEmit",
     "test": "jest",
