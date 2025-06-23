@@ -1,4 +1,3 @@
-
 {
   "builds": [
     {
@@ -7,7 +6,7 @@
       "config": {
         "installCommand": "echo 'Installing dependencies' && npm install --no-cache --verbose",
         "buildCommand": "echo 'Node version:' && node -v && echo 'Running build' && npm run vercel-build && npm run postbuild",
-        "outputDirectory": "web-build"
+        "outputDirectory": "dist"
       }
     }
   ],
