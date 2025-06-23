@@ -18,3 +18,4 @@ jobs:
       - run: npm run postbuild
       - name: Check dist output
         run: ls -la dist || echo "ERROR: dist directory not found"
+        
