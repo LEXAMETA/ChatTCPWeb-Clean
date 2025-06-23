@@ -4,8 +4,8 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "installCommand": "echo 'Installing dependencies' && npm install --no-cache --verbose",
-        "buildCommand": "echo 'Node version:' && node -v && npm run check-expo && echo 'Running build' && npm run vercel-build && npm run postbuild",
+        "installCommand": "echo 'Installing dependencies...' && npm install --no-cache --verbose",
+        "buildCommand": "echo 'Starting build...' && echo 'Node version:' && node -v && npm run check-expo && npm run vercel-build && npm run postbuild",
         "outputDirectory": "dist"
       }
     }
