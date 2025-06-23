@@ -4,9 +4,9 @@
   "scripts": {
     "start": "expo start --web",
     "web": "expo start --web",
-    "vercel-build": "echo 'Expo version:' && npx expo --version && echo 'Starting expo export' && npx expo export:web --dev || echo 'Expo export failed'",
-    "postbuild": "echo 'Checking dist contents' && ls -la dist || echo 'ERROR: dist directory not found'",
-    "check-expo": "echo 'Checking expo-cli' && npx expo --version || echo 'expo-cli not found'"
+    "vercel-build": "echo 'Node version:' && node -v && echo 'Expo CLI version:' && npx expo --version && echo 'Starting expo export...' && npx expo export:web --dev && echo 'Expo export completed' || echo 'Expo export failed'",
+    "postbuild": "echo 'Checking dist contents:' && ls -la dist && cat dist/index.html || echo 'ERROR: dist directory or index.html not found'",
+    "check-expo": "echo 'Checking Expo CLI version:' && npx expo --version || echo 'expo-cli not found'"
   },
   "dependencies": {
     "expo": "50.0.0",
