@@ -6,7 +6,7 @@
     "platforms": ["web"],
     "web": {
       "output": "static",
-      "bundler": "metro",
+      "bundler": "webpack",
       "build": {
         "outputDir": "dist"
       }
