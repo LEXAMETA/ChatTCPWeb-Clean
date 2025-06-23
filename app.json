@@ -6,7 +6,10 @@
     "platforms": ["web"],
     "web": {
       "output": "static",
-      "bundler": "metro"
+      "bundler": "metro",
+      "build": {
+        "outputDir": "dist"
+      }
     }
   }
 }
