@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "ChatTCP-Web-Clean",
+    "slug": "chattcp-web-clean",
+    "version": "1.0.0",
+    "platforms": ["web"],
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    }
+  }
+}
