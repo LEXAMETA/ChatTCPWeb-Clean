@@ -4,7 +4,7 @@
   "scripts": {
     "start": "expo start --web",
     "web": "expo start --web",
-    "web:build": "echo 'Starting expo export' && npx expo export --platform web --output web-build || echo 'Expo export failed'",
+    "vercel-build": "echo 'Starting expo export' && npx expo export --platform web --output web-build || echo 'Expo export failed'",
     "postbuild": "echo 'Checking web-build contents' && ls -la web-build || echo 'ERROR: web-build directory not found'",
     "lint": "eslint .",
     "type-check": "tsc --noEmit",
